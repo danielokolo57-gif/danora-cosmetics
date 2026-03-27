@@ -156,6 +156,15 @@ export default function Index() {
         socialLinks={socialLinks}
       />
 
+      {selectedProduct && (
+        <ProductDetail
+          product={selectedProduct}
+          currency={currency}
+          onClose={() => setSelectedProduct(null)}
+          onAddToCart={(p) => { handleAddToCart(p); setSelectedProduct(null); }}
+        />
+      )}
+
       <CartDrawer
         open={cartOpen}
         onClose={() => setCartOpen(false)}
