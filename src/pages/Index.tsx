@@ -128,6 +128,7 @@ export default function Index() {
         apiProducts={products}
         currency={currency}
         onAddToCart={handleAddToCart}
+        onProductClick={(p) => setSelectedProduct(p)}
       />
 
       <About
