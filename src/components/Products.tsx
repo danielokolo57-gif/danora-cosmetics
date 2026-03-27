@@ -45,7 +45,7 @@ function ProductCard({ product, currency, onAddToCart, onProductClick }: { produ
         )}
         {/* Quick add overlay */}
         <button
-          onClick={() => onAddToCart(product)}
+          onClick={(e) => { e.stopPropagation(); onAddToCart(product); }}
           className="absolute bottom-3 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] py-2.5 text-xs font-body font-semibold tracking-widest uppercase rounded-full opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
           style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
         >
