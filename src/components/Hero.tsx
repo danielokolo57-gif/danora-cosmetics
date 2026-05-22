@@ -87,18 +87,6 @@ export default function Hero({ storeName, onShopNow }: HeroProps) {
               />
             </div>
 
-            {/* Badge */}
-            <div
-              className="absolute top-4 right-4 md:top-6 md:-right-4 w-24 h-24 md:w-28 md:h-28 rounded-full flex flex-col items-center justify-center text-center shadow-xl animate-pulse"
-              style={{ background: "hsl(var(--ivory))", animationDuration: "3s" }}
-            >
-              <p className="font-display text-lg md:text-xl font-semibold leading-none" style={{ color: "hsl(var(--primary))" }}>
-                20% OFF
-              </p>
-              <p className="font-body text-[9px] md:text-[10px] mt-1 px-2" style={{ color: "hsl(var(--muted-foreground))" }}>
-                For New Customers
-              </p>
-            </div>
           </div>
         </div>
       </div>
